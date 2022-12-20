@@ -7,6 +7,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
 
   <title>Olivia T. Zahn</title>
   <!--
@@ -23,7 +24,6 @@ https://templatemo.com/tm-531-reflux
   <link rel="stylesheet" href="assets/css/lightbox.css" />
 </head>
 <!-- TODO: 
-- add photo of CV (without address) under CV section and PDF download link
 - check how everything looks on bigger macbook and monitor
 -->
 
@@ -47,8 +47,8 @@ https://templatemo.com/tm-531-reflux
           <nav class="main-nav" role="navigation">
             <ul class="main-menu">
               <li><a href="#section1">Research Projects</a></li>
-              <li><a href="#section2">Curriculum Vitae</a></li>
-              <li><a href="#section3">Publications</a></li>
+              <li><a href="#section2">Publications</a></li>
+              <li><a href="#section3">CV</a></li>
             </ul>
           </nav>
           <div class="social-network">
@@ -202,10 +202,17 @@ https://templatemo.com/tm-531-reflux
         <div class="right-image-post">
           <div class="row">
             <div class="left-text">
-              <h4>Spot 1</h4>
+              <h4>Sparse Sensor Placement</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
+                Sensor placement is an important and ubiquitous problem across the engineering and
+                physical sciences for tasks such as reconstruction, forecasting and control. In this
+                work, we develop two algorithms for optimizing sensor locations for use with shallow
+                decoder networks (SDNs): one which is a linear selection algorithm based upon QR (Q-SDN),
+                and one which is a nonlinear selection algorithm based upon neural network pruning (P-SDN).
+                We demonstrate our sensor selection algorithms on two example data sets from fluid dynamics.
+                Moreover, we provide a detailed comparison between our linear (Q-SDN) and nonlinear
+                (P-SDN) algorithms with traditional linear embedding techniques (proper orthogonal decomposition) and QR
+                greedy selection.
             </div>
           </div>
         </div>
@@ -213,9 +220,15 @@ https://templatemo.com/tm-531-reflux
         <div class="right-image-post">
           <div class="row">
             <div class="left-text">
-              <h4>Spot 2</h4>
+              <h4>Shallow Recurrent Decoder Network</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                Sensing is a universal task in science and engineering. These tasks are exceptionally challenging to
+                achieve with limited sensors, corrupt and missing data, and noisy measurements. Here, we propose a
+                <b>SH</b>allow <b>RE</b>current <b>D</b>ecoder (SHRED) neural network structure which incorporates a
+                recurrent neural network (LSTM) to learn a latent representation of the temporal dynamics of the sensor,
+                and a shallow decoder that learns an end-to-end mapping between this latent representation and the
+                high-dimensional state space. SHRED enables faithful reconstructions with far fewer sensors, outperforms
+                existing techniques when more measurements are available, and is agnostic towards sensor placement.
               </p>
             </div>
           </div>
@@ -224,18 +237,7 @@ https://templatemo.com/tm-531-reflux
       </div>
     </section>
 
-    <section class="section my-services" data-section="section2">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Curriculum Vitae</h2>
-          <div class="line-dec"></div>
-          <span>A PDF version of my CV can be found
-            <a href="#">here.</a></span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section my-work" data-section="section3">
+    <section class="section my-work" data-section="section2">
       <div class="container">
         <div class="section-heading">
           <h2>Publications</h2>
@@ -260,6 +262,18 @@ https://templatemo.com/tm-531-reflux
             <p align="left">Williams, Jan, <b>Olivia Zahn</b>, and J. Nathan Kutz. “Sensing with Shallow Recurrent
               Decoder Networks.” In progress (exp. 2023).</p>
           </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section my-services" data-section="section3">
+      <div class="container">
+        <div class="section-heading">
+          <h2>CV</h2>
+          <div class="line-dec"></div>
+          <object style="width:100%; height:50rem" type="application/pdf" data="./assets/otz_CV_wo_address.pdf">
+            <p>Insert your error message here, if the PDF cannot be displayed.</p>
+          </object>
         </div>
       </div>
     </section>

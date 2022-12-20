@@ -1,146 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
 
-    <title>Sparse Resnet-18</title>
-    <!--
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
+
+  <title>Sparse Resnet-18</title>
+  <!--
 Reflux Template
 https://templatemo.com/tm-531-reflux
 -->
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-  </head>
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/css/lightbox.css" />
+</head>
 
 
-  <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <img src="assets/images/author-image.jpg" alt="" />
-            </div>
-            <div class="author-content">
-              <h4>Olivia T. Zahn</h4>
-              <p>Physics Ph.D. candidate</p>
-              <p>Kutz Research Group</p>
-              <p>University of Washington</p>
-            </div>
+<body>
+  <div id="page-wraper">
+    <!-- Sidebar Menu -->
+    <div class="responsive-nav">
+      <i class="fa fa-bars" id="menu-toggle"></i>
+      <div id="menu" class="menu">
+        <i class="fa fa-times" id="menu-close"></i>
+        <div class="container">
+          <div class="image">
+            <img src="assets/images/author-image.jpg" alt="" />
+          </div>
+          <div class="author-content">
+            <h4>Olivia T. Zahn</h4>
+            <p>Physics Ph.D. candidate</p>
+            <p>Kutz Research Group</p>
+            <p>University of Washington</p>
+          </div>
 
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a target="_blank" rel="noopener noreferrer" href="https://urldefense.com/v3/__https://scholar.google.com/citations?user=GlAnMvcAAAAJ&amp;hl=en&amp;oi=ao__;!!K-Hz7m0Vt54!kpVEL4dQ8cdLgaUY5cvRCQU6xWPSpuYKQunlpdDvveTX1A5JMobeXE8Lb9V2i4JRYxhpStuQKFMeKTOZwIH7_Ec$"><i class="fa fa-google"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" rel="noopener noreferrer" href="https://urldefense.com/v3/__https://www.linkedin.com/in/olivia-zahn-78b11a133/__;!!K-Hz7m0Vt54!kpVEL4dQ8cdLgaUY5cvRCQU6xWPSpuYKQunlpdDvveTX1A5JMobeXE8Lb9V2i4JRYxhpStuQKFMeKTOZmSUBsMo$"><i class="fa fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" rel="noopener noreferrer" href="https://urldefense.com/v3/__https://github.com/oliviatessa__;!!K-Hz7m0Vt54!kpVEL4dQ8cdLgaUY5cvRCQU6xWPSpuYKQunlpdDvveTX1A5JMobeXE8Lb9V2i4JRYxhpStuQKFMeKTOZIfXpuc0$"><i class="fa fa-github"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
+          <div class="social-network">
+            <ul class="soial-icons">
+              <li>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://urldefense.com/v3/__https://scholar.google.com/citations?user=GlAnMvcAAAAJ&amp;hl=en&amp;oi=ao__;!!K-Hz7m0Vt54!kpVEL4dQ8cdLgaUY5cvRCQU6xWPSpuYKQunlpdDvveTX1A5JMobeXE8Lb9V2i4JRYxhpStuQKFMeKTOZwIH7_Ec$"><i
+                    class="fa fa-google"></i></a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://urldefense.com/v3/__https://www.linkedin.com/in/olivia-zahn-78b11a133/__;!!K-Hz7m0Vt54!kpVEL4dQ8cdLgaUY5cvRCQU6xWPSpuYKQunlpdDvveTX1A5JMobeXE8Lb9V2i4JRYxhpStuQKFMeKTOZmSUBsMo$"><i
+                    class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://urldefense.com/v3/__https://github.com/oliviatessa__;!!K-Hz7m0Vt54!kpVEL4dQ8cdLgaUY5cvRCQU6xWPSpuYKQunlpdDvveTX1A5JMobeXE8Lb9V2i4JRYxhpStuQKFMeKTOZIfXpuc0$"><i
+                    class="fa fa-github"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-            <div class="row">
-                <div class="left-text margin">
-                  <h4>Placeholder</h4>
-                  <p>
-                   sample text
-                  </p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
     </div>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <section class="section about-me" data-section="section1">
+      <div class="container">
+        <div class="row">
+          <div class="left-text margin">
+            <h4>Sparse ResNet-18</h4>
+              <p>Deep neural networks (DNNs) are highly overparameterized, a feature that allows them to learn complex
+                input to output mappings. However, this results in DNNs being difficult to interpret, as well as being
+                computationally expensive. In convolutional neural networks (CNNs), filters are updated to find an optimal
+                feature mapping for an image dataset. CNNs, such as ResNet-18, perform many image classification tasks
+                well, but likely have redundant filters that could be removed to reduce the memory footprint of the
+                network. Here, we use neural network pruning to reduce the number of filters used in image classification
+                tasks and we explore the relationship between image dataset complexity and number of CNN filters necessary
+                for accurate classification.</p>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
+              <p>We performed three experiments on three canonical image classification datasets (MNIST, CIFAR-10, and
+                CIFAR-100). We started with a pretrained ResNet-18 model trained on the ImageNet dataset. Then the network
+                is fine-tuned to one of the experimental datasets (e.g., MNIST). Magnitude-based neural network filter
+                pruning was used to remove filters with the lowest L2 norm. Each layer of the network is pruned
+                independently and in reverse order, starting with the final layer. Pruning the layers in reverse order
+                allows us to maximally sparsify the deeper layers of the network, which capture the higher-order features,
+                before pruning the shallow layers, which capture lower-order features. After a group of filters are
+                removed, the network undergoes a cycle of retraining to maintain a baseline level of performance. If
+                performance falls too much, the pruning of a given layer is interrupted and we start pruning the next
+                layer.</p>
 
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
+              <p>We compared the maximum sparsity achieved via neural network pruning across networks trained on three
+                different canonical datasets (MNIST, CIFAR-10, and CIFAR-100). We found that the maximum achievable
+                sparsity is correlated with the task complexity of the dataset. Simpler tasks, such as classifying MNIST
+                digits, can be done with fewer parameters than more challenging tasks (classifying 10 colored image
+                classes or 100 colored image classes).</p>
+          </div>
+        </div>
 
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos,
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    //according to loftblog tut
+    $(".main-menu li:first").addClass("active");
+
+    var showSection = function showSection(section, isAnimate) {
+      var direction = section.replace(/#/, ""),
+        reqSection = $(".section").filter(
+          '[data-section="' + direction + '"]'
+        ),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $("body, html").animate(
+          {
+            scrollTop: reqSectionPos,
+          },
+          800
+        );
+      } else {
+        $("body, html").scrollTop(reqSectionPos);
+      }
+    };
+
+    var checkSection = function checkSection() {
+      $(".section").each(function () {
+        var $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var currentId = $this.data("section"),
+            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+          reqLink
+            .closest("li")
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
         }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function () {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function (e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
       });
+    };
 
-      $(window).scroll(function () {
-        checkSection();
-      });
-    </script>
-  </body>
+    $(".main-menu").on("click", "a", function (e) {
+      e.preventDefault();
+      showSection($(this).attr("href"), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
+</body>
+
 </html>
