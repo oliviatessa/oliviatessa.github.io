@@ -23,11 +23,12 @@ body {
 
 /* Basic */
 
-* {
-  color: #000 !important;
+#link {
+  color:#cc88df !important;
 }
 
 body {
+  color: #000;
   overflow-x: hidden;
 }
 
@@ -45,13 +46,11 @@ a:hover {
 p {
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
 }
 
 h4 {
   font-size: 26px;
   font-weight: 700;
-  color: #fff;
   letter-spacing: 0.25px;
 }
 
@@ -120,7 +119,6 @@ html {
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
-  color: #fff;
   width: 100%;
   transition: all 0.5s;
   border-top: 2px solid #fff;
@@ -129,7 +127,6 @@ html {
 .main-nav li:hover a,
 .main-nav li.active a {
   background: #fff;
-  color: #8c363e;
 }
 
 /* Sidebar Menu */
@@ -157,7 +154,10 @@ html {
   margin-bottom: 0 !important;
   font-size: 0.9rem;
   font-style: italic;
-  color: #fff;
+}
+
+.menu .social {
+  color: #000;
 }
 
 .menu .social-network {
@@ -182,7 +182,6 @@ html {
 
 .menu .social-network ul li a:hover {
   background-color: #fff;
-  color: #a43f49;
 }
 
 .menu:before,
@@ -230,7 +229,6 @@ html {
 }
 
 .menu-toggle {
-  color: #fff;
   cursor: pointer;
   font-size: 25px;
   position: fixed;
@@ -244,7 +242,6 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  color: #a43f49;
   background-color: #fff;
   width: 60px;
   height: 60px;
@@ -260,7 +257,6 @@ html {
 #menu-close {
   cursor: pointer;
   text-align: right;
-  color: #a43f49;
   background-color: #fff;
   width: 100%;
   height: 60px;
@@ -272,7 +268,6 @@ html {
 /* Section */
 
 .section {
-  color: #fff;
   width: 55%;
   right: 10%;
   left: 35%;
@@ -290,7 +285,6 @@ html {
 .section-heading h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
 }
 
 .section-heading .line-dec {
@@ -307,7 +301,6 @@ html {
 .section-heading span {
   margin-top: 5px;
   font-size: 16px;
-  color: #fff;
   letter-spacing: 0.5px;
 }
 
@@ -318,7 +311,7 @@ html {
   padding: 12px 20px;
   border-radius: 3px;
   background-color: #fff;
-  color: #a43f49;
+  color: #cc88df;
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -335,7 +328,6 @@ button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #fff;
-  color: #a43f49;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -357,23 +349,25 @@ button:hover {
 .right-image-post {
   margin-top: 60px;
   padding-top: 60px;
-  border-top: 2px solid rgba(250, 250, 250, 0.1);
+  border-top: 2px solid rgba(150, 150, 150, 0.1);
 }
 
 .left-image-post-border {
   margin-top: 60px;
   padding-top: 60px;
-  border-top: 2px solid rgba(250, 250, 250, 0.1);
+  border-top: 2px solid rgba(150, 150, 150, 0.1);
 }
 
 .left-image img,
 .right-image img {
-  margin-top: 2rem;
-  min-width: 29rem;
-  max-width: 29rem;
-  min-height: 18rem;
-  max-height: 18rem;
+  margin-top: 3.25rem;
+  min-height: 13rem;
+  min-width: 24rem;
   border-radius: 5px;
+}
+
+.margin {
+  margin-top: 3rem;
 }
 
 .right-image-post h4,
@@ -417,13 +411,6 @@ button:hover {
   background-color: rgba(250, 250, 250, 1);
 }
 
-.service-item:hover h4 {
-  color: #1e1e1e;
-}
-
-.service-item:hover p {
-  color: #4a4a4a;
-}
 
 .service-item .service-icon {
   width: 70px;
@@ -496,10 +483,6 @@ section.my-work .section-heading {
   cursor: pointer;
 }
 
-.isotope-toolbar input[type="radio"]:checked + span {
-  color: #a43f49;
-  border-bottom: 2px solid #a43f49;
-}
 
 .isotope-box {
   position: relative;
@@ -516,9 +499,6 @@ section.my-work .section-heading {
   padding-top: 15px;
 }
 
-.isotope-toolbar a {
-  color: #fff;
-}
 
 .isotope-item {
   position: relative;
@@ -636,7 +616,7 @@ figure.snip1321.hover:after {
   }
 
   .section {
-    color: #fff;
+    color: #000;
     width: 65%;
     right: 5%;
     left: 30%;
